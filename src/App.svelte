@@ -5,7 +5,9 @@
   getBib()
   
   async function getBib() {
-  	const response = await fetch(`/bib.bib`);
+    const fileLocation = `${location}bib.bib`;
+    console.log(fileLocation);
+  	const response = await fetch(`${fileLocation}`);
   	const content = await response.text();
   	console.log(content);
   }
