@@ -2,10 +2,10 @@
   import svelteLogo from './assets/svelte.svg'
   import Counter from './lib/Counter.svelte'
 
-  // getBib()
+  getBib()
   
   async function getBib() {
-  	const response = await fetch(`${VITE_PUBLIC_HOST}/bib.bib`);
+  	const response = await fetch(`/bib.bib`);
   	const content = await response.text();
   	console.log(content);
   }
